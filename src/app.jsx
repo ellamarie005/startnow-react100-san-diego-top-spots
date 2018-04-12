@@ -19,12 +19,6 @@ class App extends Component {
       .then(topspots => this.setState({ topspots }));
   }
 
-  // makeBlock(event) {
-  // this.setState({
-  // [event.target.id]:
-  // })
-  //}
-
   render() {
     return (
 
@@ -34,7 +28,7 @@ class App extends Component {
             <h1>San Diego Top Spots</h1>
             <p>A list of the top 30 places to see in San Diego, California.</p>
           </div>
-          <div className="card">
+          <div>
             {
               this.state.topspots.map(topspot => (
                 <TopSpot
